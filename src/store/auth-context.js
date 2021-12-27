@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+require('dotenv').config();
 
 const AuthContext = React.createContext({
     token: '',
@@ -20,7 +21,7 @@ export const AuthContextProvider = (props) => {
     //!! means that if the token is empty it returns false
     // and if the token is not empty it return true
     const userIsLoggenIn = !!token;
-    const IsUserMng = (localId === 'G3hmMUHJXMOmXfy8nFrc0LR96Uf1' ) ? true : false;
+    const IsUserMng = (localId === process.env.REACT_APP_MNG_KEY) ? true : false;
 
     const loginHandler = (token) => {
         setToken(token);
