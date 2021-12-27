@@ -1,9 +1,8 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/storage';
 import 'firebase/compat/firestore';
-
 require('dotenv').config();
-console.log(process.env);
+
 
 const firebaseConfig = {
   //apiKey: "AIzaSyAQplW59N8PPTNtyBPJsFl-8WWrXcnV2wA",

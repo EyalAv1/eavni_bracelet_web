@@ -1,6 +1,4 @@
 import React from 'react';
-
-import img from '../../../assets/images/I01-1.JPG';
 import classes from './Image.css';
 
 const image = (props) => (
