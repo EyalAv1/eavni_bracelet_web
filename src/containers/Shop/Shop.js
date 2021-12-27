@@ -6,7 +6,6 @@ import useFirestore from '../../hooks/useFirebase';
 
 const Shop = props => {
     const { docs } = useFirestore('images'); 
-    console.log(docs);
     return (
         <div >
             {docs && docs.map(doc => (

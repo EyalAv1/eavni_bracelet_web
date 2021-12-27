@@ -6,6 +6,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AuthContextProvider } from './store/auth-context';
 
+
+const {APP_ID} = process.env;
+
+console.log(APP_ID);
+
 ReactDOM.render(
   // <React.StrictMode>
   <AuthContextProvider>
@@ -16,6 +21,8 @@ ReactDOM.render(
   // </React.StrictMode>,
   document.getElementById('root')
 );
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
