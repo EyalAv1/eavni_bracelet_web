@@ -6,11 +6,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AuthContextProvider } from './store/auth-context';
 
-
-const {APP_ID} = process.env;
-
-console.log(APP_ID);
-
 ReactDOM.render(
   // <React.StrictMode>
   <AuthContextProvider>
