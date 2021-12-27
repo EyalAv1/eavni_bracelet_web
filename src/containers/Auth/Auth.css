@@ -1,0 +1,16 @@
+.Auth {
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 2px 3px rgb(77, 129, 131);
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+    color:rgb(77, 129, 131);
+}
+
+@media (min-width: 60) {
+    .Auth {
+        width: 500px;
+    }    
+}

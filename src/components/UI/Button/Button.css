@@ -1,0 +1,30 @@
+.Button {
+    background-color: transparent;
+    border: none;
+    color: rgb(86, 207, 203);
+    outline: none;
+    cursor: pointer;
+    font-family: 'Oregano', cursive;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    text-shadow: 1px 0px rgb(77, 129, 131);
+}
+
+.Button:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.Success {
+    color: #5C9210;
+}
+
+.Danger {
+    color: #944317;
+}
