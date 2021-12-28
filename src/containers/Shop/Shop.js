@@ -3,13 +3,14 @@ import React from 'react';
 //import Aux from '../../hoc/Auxuliary/Auxuliary';
 import Products from '../../components/Products/Products';
 import useFirestore from '../../hooks/useFirebase';
+import classes from './Shop.css';
 
 const Shop = props => {
     const { docs } = useFirestore('images');
     return (
-        <div >
+        <div>
             {docs && docs.map(doc => (
-                <div key={doc.id} >
+                <div key={doc.id} className={classes.Photo}>
                     <Products url={doc.url} alt={doc.id} description={doc.description} price={doc.price} />
                 </div>
             ))}

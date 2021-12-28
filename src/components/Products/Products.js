@@ -6,7 +6,7 @@ import classes from './Products.css';
 const product = props => {
 
     return (
-        <div className={classes.Photo}>
+        <div>
             <p className={classes.Border}>
                 <Image url={props.url} alt={props.alt} />
             </p>
