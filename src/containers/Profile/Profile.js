@@ -1,8 +1,8 @@
 import React, { useState, useRef, useContext } from 'react';
 import { useHistory } from 'react-router';
-
 import Button from '../../components/UI/Button/Button';
 import AuthContext from '../../store/auth-context';
+require('dotenv').config();
 
 const Profile = () => {
 
@@ -24,7 +24,7 @@ const Profile = () => {
 
         //add validation
 
-        fetch("https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyAQplW59N8PPTNtyBPJsFl-8WWrXcnV2wA", {
+        fetch("https://identitytoolkit.googleapis.com/v1/accounts:update?key=" + process.env.REACT_APP_API_KEY, {
             method: 'POST',
             body: JSON.stringify({
                 idToken: authCtx.token,
@@ -47,7 +47,7 @@ const Profile = () => {
             <button onClick={inputTypeChangeHandler}>SHOW PASSWORD</button>
             </div>
             <div>
-                <Button>CHANGE PASSWORD</Button>
+                <Button disabled>CHANGE PASSWORD</Button>
             </div>
         </form>
     );
