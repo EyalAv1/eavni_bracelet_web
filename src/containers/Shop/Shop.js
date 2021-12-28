@@ -5,8 +5,7 @@ import Products from '../../components/Products/Products';
 import useFirestore from '../../hooks/useFirebase';
 
 const Shop = props => {
-    const { docs } = useFirestore('images'); 
-    
+    const { docs } = useFirestore('images');
     return (
         <div >
             {docs && docs.map(doc => (
