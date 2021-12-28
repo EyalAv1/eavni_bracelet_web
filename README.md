@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### The .env content
+REACT_APP_APP_ID=1:550740773122:web:141b82007a19b9499a5a1b
+REACT_APP_API_KEY=AIzaSyAQplW59N8PPTNtyBPJsFl-8WWrXcnV2wA
+REACT_APP_MNG_KEY=G3hmMUHJXMOmXfy8nFrc0LR96Uf1
+REACT_APP_AUTH_DOMAIN=eavni-bd.firebaseapp.com
+REACT_APP_DATABASE_URL=https://eavni-bd-default-rtdb.firebaseio.com
+REACT_APP_PROJECT_ID=eavni-bd
+REACT_APP_STORAGE_BUCKET=eavni-bd.appspot.com
+REACT_APP_MESS_SENDER_ID=550740773122
+REACT_APP_MEASUREMENT_ID=G-F3VX06MVT7;
