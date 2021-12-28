@@ -34,7 +34,7 @@ const UploadImg= () => {
 
     return (
         <div>
-            <form>  
+            <form>
                 <div>
                     <p>Description:</p>
                     <textarea onChange={changeDescriptionHandler}/>

@@ -5,7 +5,10 @@ import React from 'react';
 const homePage = props => {
 
     return (
-        <h1 style={{size: '50px', color: 'black', margin: '15%'}}>This Is A Home Page</h1>
+        <label>
+            <h1 style={{size: '50px', color: 'black'}}>Welcome to EAvni</h1>
+            <h2>here you can fine many kinds of bracelets :)</h2>
+        </label>
     );
 };
 
