@@ -27,7 +27,7 @@
         width: auto;
         align-items: center;
     }
-    
+
     .NavigationItem a{
         color: #527A8E;
         height: 100%;
@@ -36,7 +36,7 @@
         font-family: 'Oregano', cursive;
         font-size: larger;
     }
-    
+
     .NavigationItem a:hover,
     .NavigationItem a:active,
     .NavigationItem a.active {

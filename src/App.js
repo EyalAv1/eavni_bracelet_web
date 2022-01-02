@@ -26,6 +26,10 @@ const UploadImg = React.lazy(() => {
   return import('./containers/MngPages/UplaodImg/UploadImg');
 });
 
+const OrderPage = React.lazy(() => {
+  return import('./components/Products/ProductsOrderPage/OrderPage');
+});
+
 function App() {
 
   let routes = (
@@ -34,6 +38,7 @@ function App() {
       <Route path="/shop" render={(props) => <Shop {...props}/>} />
       <Route path="/profile" render={(props) => <Profile {...props}/>} />
       <Route path="/UploadImage" render={(props) => <UploadImg {...props}/>} />
+      <Route path="/orderPage" render={(props) => <OrderPage {...props}/>} />
       <Route path="/" exact component={HomePage} />
       <Redirect to="/" />
     </Switch>
