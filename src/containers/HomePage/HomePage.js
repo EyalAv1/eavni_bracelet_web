@@ -7,7 +7,7 @@ const homePage = props => {
     return (
         <label>
             <h1 style={{size: '50px', color: 'black'}}>Welcome to EAvni</h1>
-            <h2>here you can fine many kinds of bracelets :)</h2>
+            <h2>here you can fined many kinds of bracelets :)</h2>
         </label>
     );
 };
