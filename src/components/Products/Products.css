@@ -2,7 +2,7 @@
     height: 280px;
     width: 260px;
     border: 2px solid #99D3D7;
-    box-shadow: 7px 7px 5px #CDCDCD;
+    /* box-shadow: 7px 7px 5px #CDCDCD; */
     font-family: cursive;
     background-color: #fffcf2;
 }
