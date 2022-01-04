@@ -8,13 +8,13 @@ import classes from './Shop.css';
 const Shop = props => {
     const { docs } = useFirestore('images');
     return (
-        <div>
+        <div className={classes.Body}>
             {docs && docs.map(doc => (
-                <div key={doc.id} className={classes.Photo}>
+                <li key={doc.id} className={classes.Photo}>
                         <NavLink to="/orderPage" activeClassName={classes.active}>
                             <Products url={doc.url} alt={doc.id} description={doc.description} price={doc.price} />
                         </NavLink>
-                </div>
+                </li>
             ))}
         </div>
     );
