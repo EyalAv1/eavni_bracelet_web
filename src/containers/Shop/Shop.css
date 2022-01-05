@@ -23,7 +23,8 @@
     text-decoration: none;
     width: 100%;
     box-sizing: border-box;
-    display: grid;
+    /* display: grid; */
+    display: block;
 }
 
 .Photo a:hover,
@@ -36,25 +37,18 @@
 @media (min-width: 500px) {
     .Photo {
         margin: 0;
-        display: flex;
+        /* display: flex; */
+        display: block;
         height: 100%;
         width: auto;
     }
 
     .Photo a{
         color: #527A8E;
-        height: 280;
+        height: 100%;
         padding: 16px 10px;
         border-bottom: 4px solid transparent;
         font-family: 'Oregano', cursive;
         font-size: larger;
     }
-
-    /* .Photo a:hover,
-    .Photo a:active,
-    .Photo a.active {
-        background:linear-gradient(#88BBD6, #E0E9E9);
-        border-bottom: 5px double #FFDB75;
-        color: gold;
-    } */
 }
