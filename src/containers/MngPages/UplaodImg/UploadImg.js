@@ -8,6 +8,7 @@ const UploadImg= () => {
     const [error, setError] = useState(null);
     const [description, setDescription] = useState("");
     const [price, setPrice] = useState(0);
+    const [imgName, setImgName] = useState("");
 
     const types = ['image/jpeg', 'image/png'];
 
@@ -16,9 +17,11 @@ const UploadImg= () => {
 
         if(selected && types.includes(selected.type)){
             setFile(selected);
+            setImgName(selected.name);
             setError('');
         } else {
             setFile(null);
+            setImgName("");
             setError('Please select an image file(png or jpeg)');
         }
     }
@@ -50,7 +53,10 @@ const UploadImg= () => {
                 <div className="output">
                     {error && <div className="error">{error}</div>}
                     {file && <div>{file.name}</div>}
-                    {file && <ProgressBar file={file} setFile={setFile} description={description} setDescription={setDescription} price={price} setPrice={setPrice}/>}
+                    {file && <ProgressBar file={file} setFile={setFile}
+                                          description={description} setDescription={setDescription}
+                                          price={price} setPrice={setPrice}
+                                          imgName={imgName} setImgName={setImgName}/>}
                 </div>
             </form>
         </div>
