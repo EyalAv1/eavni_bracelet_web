@@ -6,7 +6,8 @@
     flex-flow: row;
     text-align: center;
     height: 100%;
-    margin-left: 2%;
+    margin-left: 1.5%;
+    position: relative;
 }
 
 .Photo {

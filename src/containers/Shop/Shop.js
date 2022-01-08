@@ -12,7 +12,7 @@ const Shop = props => {
         <div className={classes.Body}>
             {docs && docs.map(doc => (
                 <li key={doc.id} className={classes.Photo}>
-                        <NavLink to={"/orderPage?ImgName=" + doc.imgName} activeClassName={classes.active}>
+                        <NavLink to={"/orderPage?ImgName=" + doc.imgName} >
                             <Products url={doc.url} alt={doc.id} description={doc.description} price={doc.price} />
                         </NavLink>
                 </li>
