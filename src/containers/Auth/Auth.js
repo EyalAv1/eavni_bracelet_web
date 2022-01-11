@@ -13,7 +13,7 @@ require('dotenv').config();
         const history = useHistory();
 
         const authCtx = useContext(AuthContext);
-        
+
         const [authForm, setAuthForm] = useState({
             email: {
                 elementType: 'input',
@@ -256,8 +256,8 @@ require('dotenv').config();
                 invalid={!formElement.config.valid}
                 shouldValidate={formElement.config.validation}
                 touched={formElement.config.touched}
-                changed={(event) => inputChangedHandler(event, formElement.id)} />)) 
-                
+                changed={(event) => inputChangedHandler(event, formElement.id)} />))
+
                 : signUpFormElementsArray.map(formElement => (
             <Input
                 key={formElement.id}

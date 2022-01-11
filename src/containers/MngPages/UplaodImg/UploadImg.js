@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ProgressBar from '../../../components/UI/ProgressBar/ProgressBar';
 
 //import Input from '../../../components/UI/Input/Input';
+// import Button from '../../../components/UI/Button/Button';
 
 const UploadImg= () => {
     const [file, setFile] = useState(null);
@@ -9,20 +10,21 @@ const UploadImg= () => {
     const [description, setDescription] = useState("");
     const [price, setPrice] = useState(0);
     const [imgName, setImgName] = useState("");
+    // const [isClicked, setIsClicked] = useState(false);
 
     const types = ['image/jpeg', 'image/png'];
 
     const changeHandler = (e) => {
         let selected = e.target.files[0];
 
-        if(selected && types.includes(selected.type)){
+        if(selected && types.includes(selected.type) && price > 0 && description !== ""){
             setFile(selected);
             setImgName(selected.name);
             setError('');
         } else {
             setFile(null);
             setImgName("");
-            setError('Please select an image file(png or jpeg)');
+            setError('Please you\'ve filled in all the fields and you select an image file(png or jpeg)');
         }
     }
 
