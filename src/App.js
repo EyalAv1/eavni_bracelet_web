@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div>
-      <Layout>
+      <Layout isAuth={true}>
         <Suspense fallback={<p>Loading...</p>}>
             {routes}
           </Suspense>
