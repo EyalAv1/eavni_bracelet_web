@@ -1,31 +1,21 @@
 .Body{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: block;
-    flex-flow: row;
-    text-align: center;
-    height: 100%;
-    margin-left: 1.5%;
-    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .Photo {
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
-    float: left;
     padding: 10px;
     margin: auto;
-    text-align: center;
 }
 
 .Photo a{
     text-decoration: none;
-    width: 100%;
     box-sizing: border-box;
-    /* display: grid; */
-    display: block;
+    display: flexbox;
 }
 
 .Photo a:hover,
@@ -38,12 +28,28 @@
 @media (min-width: 500px) {
     .Photo {
         margin: 0;
-        /* display: flex; */
-        display: block;
+        display: flex;
         height: 100%;
         width: auto;
     }
 
+    .Photo a{
+        color: #527A8E;
+        height: 100%;
+        padding: 16px 10px;
+        border-bottom: 4px solid transparent;
+        font-family: 'Oregano', cursive;
+        font-size: larger;
+    }
+}
+
+@media (max-width: 500px){
+    .Photo {
+        margin: 0;
+        display: flex;
+        height: 100%;
+        width: auto;
+    }
     .Photo a{
         color: #527A8E;
         height: 100%;
