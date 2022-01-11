@@ -9,9 +9,8 @@ body {
   /* font-family: 'Reggae One', cursive; */
   font-family: 'Sirin Stencil', cursive;
   font-family: 'Unlock', cursive;
-  align-items: center;
-  display: flexbox;
-  text-align: center;
+  /* align-items: center;
+  text-align: center; */
   /* justify-content: center; */
 }
 
