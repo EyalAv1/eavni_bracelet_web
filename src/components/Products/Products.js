@@ -7,14 +7,14 @@ const product = props => {
 
     return (
         <div>
-            <p className={classes.Border}>
+            <div className={classes.Border}>
                 <Image url={props.url} alt={props.alt} />
-            </p>
-            <p className={classes.Info}>
+            </div>
+            <div className={classes.Info}>
                 {props.description}
                 <br/>
                 Price: &nbsp;{props.price}&nbsp;ILS
-            </p>
+            </div>
         </div>
     );
 };
