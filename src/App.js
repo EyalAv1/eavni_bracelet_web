@@ -37,9 +37,9 @@ const App = (props) => {
     <Switch>
       <Route path="/auth" render={(props) => <Auth {...props}/>} />
       {/* <Route path="/shop" render={(props) => <Shop {...props}/>} /> */}
-      <Route path="/shop" component={Shop} />
+      <Route path="/shop" exact component={Shop} />
       {/* <Route path="/orderPage" render={(props) => <OrderPage {...props}/>} /> */}
-      <Route path="/orderPage" component={OrderPage} />
+      <Route path="/orderPage" exact component={OrderPage} />
       <Route path="/" exact component={HomePage} />
       <Redirect to="/" />
     </Switch>
