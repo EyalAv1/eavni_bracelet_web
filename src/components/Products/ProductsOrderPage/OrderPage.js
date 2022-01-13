@@ -1,14 +1,16 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 // import Aux from '../../hoc/Auxuliary/Auxuliary';
 import useFirestore from '../../../hooks/useFirebase'
 import Image from '../../UI/Image/Image';
 
 const HomePage = props => {
+    const param = useParams();
 
     const { docs } = useFirestore('images');
-    let search = window.location.search;
-    let params = new URLSearchParams(search);
-    let foo = params.get('ImgName');
+    // let search = window.location.search;
+    // let params = new URLSearchParams(search);
+     let foo = param.ImgName;
 
     return (
         <label>

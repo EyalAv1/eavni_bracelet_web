@@ -37,7 +37,7 @@ const App = (props) => {
     <Switch>
       <Route path="/auth" render={(props) => <Auth {...props}/>} />
       <Route path="/shop" render={(props) => <Shop {...props}/>} />
-      <Route path="/orderPage" render={(props) => <OrderPage {...props}/>} />
+      <Route path="/orderPage/:ImgName" render={(props) => <OrderPage {...props}/>} />
       <Route path="/" exact component={HomePage} />
       <Redirect to="/" />
     </Switch>
