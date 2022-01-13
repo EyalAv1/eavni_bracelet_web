@@ -4,8 +4,6 @@ import { useParams } from 'react-router-dom';
 import useFirestore from '../../../hooks/useFirebase'
 import Image from '../../UI/Image/Image';
 
-import { Route } from 'react-router-dom';
-
 const HomePage = props => {
     const param = useParams();
 
