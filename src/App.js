@@ -31,13 +31,13 @@ const OrderPage = React.lazy(() => {
   return import('./components/Products/ProductsOrderPage/OrderPage');
 });
 
-const App = () => {
+const App = (props) => {
   const authCtx = useContext(AuthContext);
-
   let routes = (
     <Switch>
       <Route path="/auth" render={(props) => <Auth {...props}/>} />
-      <Route path="/shop" render={(props) => <Shop {...props}/>} />
+      {/* <Route path="/shop" render={(props) => <Shop {...props}/>} /> */}
+      <Route path="/shop" component={Shop} />
       <Route path="/orderPage" render={(props) => <OrderPage {...props}/>} />
       <Route path="/" exact component={HomePage} />
       <Redirect to="/" />

@@ -47,7 +47,7 @@ export const AuthContextProvider = (props) => {
         localId: localId,
         loginLocalId: loginLocalIdHandler,
         logoutLocalId: logoutLocalIdHandler,
-        isMng: IsUserMng 
+        isMng: IsUserMng
     };
 
     return (
