@@ -36,8 +36,8 @@ const App = (props) => {
   let routes = (
     <Switch>
       <Route path="/auth" render={(props) => <Auth {...props}/>} />
-      <Route path="/shop" render={(props) => <Shop {...props}/>} />
-      <Route path="/orderPage/:ImgName" render={(props) => <OrderPage {...props}/>} />
+      <Route path="/shop" exact render={(props) => <Shop {...props} />} />
+      <Route path="/shop/orderPage/:ImgName" component={OrderPage} />
       <Route path="/" exact component={HomePage} />
       <Redirect to="/" />
     </Switch>

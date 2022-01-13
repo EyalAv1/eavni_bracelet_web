@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom';
 import useFirestore from '../../../hooks/useFirebase'
 import Image from '../../UI/Image/Image';
 
+import { Route } from 'react-router-dom';
+
 const HomePage = props => {
     const param = useParams();
 
@@ -13,6 +15,7 @@ const HomePage = props => {
      let foo = param.ImgName;
 
     return (
+        // <Route path="/shop/orderPage/:ImgName" >
         <label>
             <h1 style={{size: '50px', color: 'black'}}>Welcome to EAvni</h1>
             <h2>this is product order page</h2>
@@ -21,6 +24,7 @@ const HomePage = props => {
             ))}
             <h3>here will be the description about the bracelet</h3>
         </label>
+        // </Route>
     );
 };
 
