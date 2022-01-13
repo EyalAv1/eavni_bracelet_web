@@ -8,14 +8,14 @@ const NavigationItems = (props) => {
 
     const authCtx = useContext(AuthContext);
 
-    const isLoggedIn = authCtx.isLoggedIn;
+    const isLoggedIn = props.isAuthenticated;
     const isMng = authCtx.isMng;
-
+    console.log("Navigation Items: " + props.isAuthenticated);
     return (
     <ul className={classes.NavigationItems}>
         {/* <NavigationItem link="/" exact>Burger Builder</NavigationItem>
         {props.isAuthenticated ? <NavigationItem link="/orders">Orders</NavigationItem> : null }
-        { !props.isAuthenticated 
+        { !props.isAuthenticated
             ? <NavigationItem link="/auth">Authenticate</NavigationItem>
             : <NavigationItem link="/logout">Logout</NavigationItem> } */}
 

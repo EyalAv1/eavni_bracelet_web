@@ -16,14 +16,14 @@ const Layout = (props) => {
     const sideDrawerToggleHandler = () => {
         setSideDrawerIsVisible(!sideDrawerIsVisible);
     }
-
+    console.log("Layout: " + props.isAuth);
     return (
         <Aux>
             <Toolbar
-                isAuth={props.isAuthenticated}
+                isAuth={props.isAuth}
                 drawToggleClicked={sideDrawerToggleHandler} />
             <SideDrawer
-                isAuth={props.isAuthenticated}
+                isAuth={props.isAuth}
                 open={sideDrawerIsVisible}
                 closed={sideDrawerClosedHandler} />
             <main className={classes.Content}>
