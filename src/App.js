@@ -36,15 +36,12 @@ const App = (props) => {
   let routes = (
     <Switch>
       <Route path="/auth" render={(props) => <Auth {...props}/>} />
-      {/* <Route path="/shop" render={(props) => <Shop {...props}/>} /> */}
-      <Route path="/shop" exact component={Shop} />
-      {/* <Route path="/orderPage" render={(props) => <OrderPage {...props}/>} /> */}
-      <Route path="/orderPage" exact component={OrderPage} />
+      <Route path="/shop" render={(props) => <Shop {...props}/>} />
+      <Route path="/orderPage" render={(props) => <OrderPage {...props}/>} />
       <Route path="/" exact component={HomePage} />
       <Redirect to="/" />
     </Switch>
   );
-  console.log(authCtx.isLoggedIn);
   if(authCtx.isLoggedIn){
     routes = (
       <Switch>

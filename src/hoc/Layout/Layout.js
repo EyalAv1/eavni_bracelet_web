@@ -16,7 +16,6 @@ const Layout = (props) => {
     const sideDrawerToggleHandler = () => {
         setSideDrawerIsVisible(!sideDrawerIsVisible);
     }
-    console.log("Layout: " + props.isAuth);
     return (
         <Aux>
             <Toolbar

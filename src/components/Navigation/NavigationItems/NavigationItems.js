@@ -10,7 +10,6 @@ const NavigationItems = (props) => {
 
     const isLoggedIn = props.isAuthenticated;
     const isMng = authCtx.isMng;
-    console.log("Navigation Items: " + props.isAuthenticated);
     return (
     <ul className={classes.NavigationItems}>
         {/* <NavigationItem link="/" exact>Burger Builder</NavigationItem>

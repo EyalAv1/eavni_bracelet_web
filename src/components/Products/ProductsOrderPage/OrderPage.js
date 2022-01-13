@@ -8,7 +8,7 @@ const HomePage = props => {
     const { docs } = useFirestore('images');
     let search = window.location.search;
     let params = new URLSearchParams(search);
-    let foo = params.get('ImgName');;
+    let foo = params.get('ImgName');
 
     return (
         <label>
