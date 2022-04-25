@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 // import Aux from '../../hoc/Auxuliary/Auxuliary';
 import useFirestore from '../../../hooks/useFirebase'
 import Image from '../../UI/Image/Image';
-import Products from '../Products';
+// import Products from '../Products';
 
 const HomePage = props => {
     const param = useParams();
